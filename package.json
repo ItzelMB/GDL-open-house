@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "This is a website that connects passengers and drivers with the labcar app",
   "main": "app.js",
+<<<<<<< HEAD
+=======
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+>>>>>>> 0b0a7891e43d2367547237e30d6dc15d0181dd6a
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ItzelMB/GDL-open-house.git"
