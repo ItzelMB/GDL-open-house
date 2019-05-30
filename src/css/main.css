@@ -18,10 +18,12 @@ main{
     color: white;
     
 }
+
 .main-title{
     font-size: 2rem;
     display:block;
 }
+
 .prf2{
     font-size: 1.5rem;
 }
@@ -30,6 +32,7 @@ main{
     width: 4rem;
     height:  1rem;
 }
+
 .register{
     margin: 4rem 0rem 8rem;
     padding: 2rem 7rem 2.5rem 2rem;
@@ -37,6 +40,7 @@ main{
     background-color: #f7b617;
     font-size: 2.5rem ;
 }
+
 .whiteBtn{
     background-color: white;
     color:black;
@@ -45,9 +49,11 @@ main{
     padding: .45rem .8rem;
     font-size: 1rem;
 }
+
 .mobile{
     display:none;
 }
+
 .webBtn{
     display:block;
 }
@@ -56,12 +62,12 @@ main{
     padding:  0rem 0rem 1rem 5rem;
     display:block;
 }
+
 .lines-effect{
     display: inline-block;
     position: relative;
     font-size: .8rem;
-    
-    }
+}
 
     .lines-effect::after,.lines-effect::before{
         content:'';
@@ -77,26 +83,30 @@ main{
     .lines-effect::after{
         right: -10rem;
     }
+
 .mobile-text{
     display:none;
 }
 
 /* ----------------Mobile main style--------------*/
-
 @media screen and (max-width: 800px){
 
     .mobile-text{
         display:block;
     }
+
     .main-title{
         display:none;
     }
+
     .mobile{
         display:block;
     }
+
     .webBtn{
         display:none;
     }
+
     .lines{
         display:none;
     }
@@ -123,13 +133,16 @@ nav {
     background-color: #FFF;
     display: flex;
 }
+
 nav ul {
     overflow: hidden;
     list-style: none;
 }
+
 nav ul li {
     float:right;
 }
+
 nav ul li a{
 
     font-size: 1rem;
@@ -150,12 +163,14 @@ nav ul li a:hover {
     display: none;
 }
 
+
 /* ----------------Mobile nav style--------------*/
 @media screen and (max-width:800px) {
 
     nav {
         display: none;
     }
+
     .hamburger {
         display: block;
         margin-right: 0.9375rem;
@@ -180,7 +195,6 @@ nav ul li a:hover {
     display:flex;
     background-color: #f7b617;
     vertical-align: middle;
-    
 }
 
 .downloadInfo{
@@ -194,7 +208,6 @@ nav ul li a:hover {
     text-align: left;
     margin: 7rem 5rem 7rem 2.5rem;
     display:block;
-    
 }
 
 .appTextP{
@@ -216,6 +229,7 @@ nav ul li a:hover {
     margin: 3rem 0rem 3rem 2rem;
 }
 
+
 /* ----------------Mobile Advertising style--------------*/
 @media screen and (max-width: 800px){
     .downloadInfo{
@@ -224,7 +238,6 @@ nav ul li a:hover {
 
     .appText{
         display:none;
-
     }
 
     .appTextMobile{
@@ -248,7 +261,6 @@ nav ul li a:hover {
 
 
 /* ----------------Desktop driver style--------------*/
-
 .driver {
     background-image:
     url("https://i.ibb.co/GnkFtg5/conduce.jpg");
@@ -262,7 +274,7 @@ nav ul li a:hover {
  .opacity {
     width: 28.13rem;
     height: 100%;
-    background:rgba(0, 0, 0, 0.45);
+    background:rgba(0, 0, 0, 0.65);
     padding-right: 3rem;
     padding-left: 3rem;
  }
@@ -291,4 +303,104 @@ nav ul li a:hover {
  .driverInfo {
     padding-top: 4.5rem;
  }
- 
+
+
+/* ----------------Mobile driver style--------------*/
+@media screen and (max-width: 800px){
+    .driver {
+        height: 23rem;
+    }
+
+    .opacity {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        width: auto;
+    }
+}
+
+
+/* ----------------Desktop prices style--------------*/
+.prices {
+    justify-content: flex-end;
+    display:flex;
+    background-color: #f7b617;
+    color: white;
+    align-content: flex-start;
+}
+
+.routes {
+    margin-right: 7rem;
+    flex-direction: row;
+}
+
+.titlePrices{
+    margin-bottom: 1.5rem;
+}
+
+input {
+    border-radius: .6rem;
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid white;
+    padding: .7rem;
+    margin: .7rem;
+    width: 20rem;
+}
+
+::placeholder {
+    color: white;
+}
+
+.pricesBox {
+    align-content: flex-start;
+    /*margin-right: 45rem;*/
+    margin-left: 6rem;
+    margin-top: 5rem;
+    float: left;
+}
+
+.mapPic {
+    align-content: flex-end;
+    padding: 2rem 1rem 2.5rem 6rem;
+    text-align: left;
+    margin-bottom: 10rem;
+    margin-top: 0rem;
+    justify-content: flex-end;
+    float: right;
+}
+
+.subtitle {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.prf3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.routesBtn{
+    margin-left: 8rem;
+    margin-top: 1.2rem;
+    padding: .6rem;
+    width: 10rem;
+}
+
+.inputWeb{
+    display: none;
+}
+
+.routesForm{
+    padding-right: 7rem;
+}
+
+
+/* ----------------Mobile Prices style--------------*/
+@media screen and (max-width:800px) {
+
+  .inputWeb{
+      display: block;
+  }
+}
