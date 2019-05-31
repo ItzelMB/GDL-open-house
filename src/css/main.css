@@ -26,9 +26,15 @@ main{
 }
 
 .prf2{
-    font-size: 1.5rem;
+    display: none;
 }
-    
+
+.subtIndex {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 #logo-begin{
     width: 4rem;
     height:  1rem;
@@ -93,6 +99,12 @@ main{
 /* ----------------Mobile main style--------------*/
 
 @media screen and (max-width: 800px){
+
+    .prf2{
+        display: block;
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
 
     .mobile-text{
         display:block;
@@ -456,7 +468,6 @@ nav ul li a:hover {
 /* ----------------Desktop footer style--------------*/
 footer {
     background-color: #2b2b2b;
-    height: 25rem;
     padding: 2rem;
  }
  
@@ -468,16 +479,22 @@ footer {
     text-decoration: none;
     color: #FFF;
     font-size: 1rem;
+    line-height: 2.5rem;
     list-style: none;
  }
  
  i {
     color: #FFF;
     flex-flow: flex-end;
+    font-size: 1.5rem;
+    margin: 1.2rem;
  }
  
  .appRoutes {
-    float: right;
+    justify-content: flex-end;
+    margin-left: 5rem;
+    align-self: flex-end;
+    align-items: flex-end;
  }
  
  .copyRight {
@@ -488,7 +505,31 @@ footer {
 
  .ulContainer {
     display: flex;
+    padding: 3rem;
  }
+
+ .infoFooter {
+    margin:1.5rem;
+}
+
+.appInstall {
+    margin: 1rem;
+}
+
+.installBtns {
+    align-self: flex-end;
+    flex-direction: column;
+    text-align: right;
+}
+
+.footerListContainer li {
+    list-style: none;
+}
+
+.footerListContainer-B {
+    list-style: none;
+    padding-left: 6rem;
+}
 
 
  /* ----------------Mobile footer style--------------*/
@@ -499,9 +540,17 @@ footer {
         height: 90%;
     }
 
+    .footerList {
+        line-height: .4rem;
+    }
+
     .socialIcons {
         align-self: flex-start;
         margin-bottom: 2rem;
+    }
+
+    .footerListContainer {
+        padding: 0;
     }
 
     .footerListContainer-B {
@@ -515,11 +564,27 @@ footer {
     }
 
     .appInstall {
+        text-align: none;
+        margin: 0;
+        padding: .25rem;
         width: 8.5rem;
     }
 
+    .infoFooter {
+        margin: 0;
+    }
+
+    .installBtns {
+        margin: 0;
+    }
+
+    i {
+        margin: .25rem;
+        font-size: 1.2rem; 
+    }
+
     .ulContainer {
-        margin: 2rem;
+        margin: 1.7rem;
     }
  }
 
@@ -535,6 +600,7 @@ footer {
     overflow: auto;
     background-color: rgb(0,0,0,0.75);
   }
+
   .modalDriverInfo p{
     color: gray;
     font-size: .8rem;
@@ -629,8 +695,6 @@ footer {
    .inputWithIcon i{
        position:absolute;
        left:0;
-       top: .5rem;
-       padding: .5625rem .5rem;
        color:#aaa;
    }
    .inputWithIcon input[type=text]:focus + i{
@@ -659,4 +723,3 @@ footer {
  .inputWithIcon input[type=password]:focus + i{
      color:#5bc0de;
  }
- 
