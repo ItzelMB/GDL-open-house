@@ -21,10 +21,9 @@
         
         <nav id="id01">    
             <ul >
-                <!-- <span class="hamburger"><i class="fas fa-bars"></i></span> -->
                 <span id="btnCloseMenu">&times;</span>
-                <li> <a href="#"> Viaja </a> </li>
-                <li><a href="#">Conduce </a> </li>
+                <li> <a href="#pricesSecc"> Viaja </a> </li>
+                <li><a href="#driverSecc">Conduce </a> </li>
                 <li><a id="loginLink" href="#"> Inicia Sesión</a></li>   
             </ul>
         </nav>     
@@ -38,13 +37,12 @@
             <div class="main-title">
                 <p> Disfruta del viaje</p>
                 <p> Eres dueño de tu tiempo </p>
-                <p class="mobile-text">Comienza a viajar con</p>
-                <img src="" />
-                <br>
+               
+                <p class="subtIndex"> Viaja con <img id="logo-begin" src="./assets/images/logoBlanco.png" /></p>
             </div>
 
             <div class="prf2">
-                <p> Viaja con <img id="logo-begin" src="./assets/images/logoBlanco.png" /></p>
+                <p> Comienza a viajar <br> con <img id="logo-begin" src="./assets/images/logoBlanco.png" /></p>
             </div>
 
             <button id="userRegister" class="whiteBtn webBtn" type="button">REGÍSTRATE</button>
@@ -77,7 +75,7 @@
     </section>
 
     <!------------------------SECC DRIVER---------------------------------------->
-    <section class="driver">
+    <section id="driverSecc" class="driver">
         <div class="opacity">
             <div class="driverInfo">
                 <p class="subtitle">Conduce cuando quieras</p>
@@ -88,18 +86,18 @@
     </section>
 
     <!------------------------SECC PRICES---------------------------------------->
-    <section class="prices">
+    <section id="pricesSecc" class="prices">
         <div class="routes">
             <div class="pricesBox">
                 <form class="routesForm">
                     <p class="subtitle">Tarifas</p>
                     <p class="prf3">Consulta las tarifas LabCar aquí</p>
-                    <img src="./assets/images/shape.png" /> <input class="inputP" type="text"
-                        placeholder="Ingrese su punto de partida"><input type="text" class="inputWeb"
+                    <img src="./assets/images/shape.png" /> <input class="inputP" type="search"
+                        placeholder="Ingrese su punto de partida"><input type="search" class="inputWeb"
                         placeholder="Insurgentes Centro, Cuahutémoc, Ciudad de México">
                     <br>
-                    <img src="./assets/images/shape2.png" /> <input class="inputP" type="text" placeholder="Ingrese su destino"><input
-                        class="inputWeb" type="text" placeholder="Carolina, Ciuidad de los Deportes, Cuidad de México">
+                    <img src="./assets/images/shape2.png" /> <input class="inputP" type="search" placeholder="Ingrese su destino"><input
+                        class="inputWeb" type="search" placeholder="Carolina, Ciuidad de los Deportes, Cuidad de México">
                     <br>
                     <button class="whiteBtn routesBtn"> ¡TRAZAR RUTA!</button>
                 </form>
@@ -146,8 +144,10 @@
                     <a href="http://www.apple.com"><i class="fab fa-apple"></i></a>
                     <a href="https://play.google.com"><i class="fas fa-play"></i></a>
                 </div>
-                <img src="./assets/images/appstore.png" alt="appstore" class="appInstall" />
-                <img src="./assets/images/enBadgeWebGeneric.png" alt="play" class="appInstall" />
+                <div class="installBtns">
+                    <img src="./assets/images/appstore.png" alt="appstore" class="appInstall" />
+                    <img src="./assets/images/enBadgeWebGeneric.png" alt="play" class="appInstall" />
+                </div>
             </div>
         </container>
         <hr />
@@ -158,7 +158,7 @@
     
     <div id="modalLogin" class="modalContainer">
         <div class="modalDriverInfo">
-            <button id="close3" class="close" >X</button>
+            <button id="close3" class="close" >╳</button>
             <div class="modalImage">
                 <img  src="https://i.ibb.co/5W2QLv4/usericon2.png" />
             </div>
@@ -182,7 +182,7 @@
     
     <div id="modalRegister" class="modalContainer">
         <div class="modalDriverInfo">
-            <button id="close1" class="close" >X</button>
+            <button id="close1" class="close" >╳</button>
             <button class="blackBtn">¿Ya tienes una cuenta? </button>
             <p> <br> O CREA UNA CUENTA NUEVA <br></p>
             <form class="driverForm">
@@ -204,7 +204,7 @@
     <div id="modal" class="modalContainer">
         <div class="modalDriverInfo">
             <form class="driverForm">
-                <button id="close2" class="close" >X</button>
+                <button id="close2" class="close" >╳</button>
                 <h6>¿Tienes un vehículo de 4 puertas?</h6>
                 <select name="vehicle">
                     <option>si</option>
@@ -214,7 +214,7 @@
                 <select name="brand">
                     <option>Elige la marca del vehículo</option>
                 </select>
-                <p>¿No ves tu vehículo en la lista? Envía un correo electrónico a <a href="#">sociosmdv@uber.com</a></p><br>
+                <p>¿No ves tu vehículo en la lista? Envía un correo electrónico a <a href="#">sociosmdv@labcar.com</a></p><br>
                 <h6>Modelo</h6>
                 <select name="model">
                     <option>modelo1</option>
